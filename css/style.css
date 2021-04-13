@@ -155,7 +155,8 @@ body {
   padding: 6px 22px;
   display: inline-block;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .portfolio-overlay_conteiner {
   position: relative;
@@ -164,9 +165,9 @@ body {
 .port-overlay {
   position: absolute;
   height: auto;
-  left: 0;
+  left: 20;
   top: 0;
-  transform: translateY(105%);
+  transform: translateY(101%);
   transition: transform 250ms;
   background: rgba(33, 150, 243, 0.9);
 
@@ -180,11 +181,12 @@ body {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.our_project:hover .port-overlay,
-.our_project:focus .port-overlay {
+.our_project:hover .port-overlay {
   transform: translateY(0%);
 }
-
+.link-pf:focus .port-overlay {
+  transform: translateY(0%);
+}
 .port_btn {
   display: flex;
   align-items: center;
